@@ -40,7 +40,7 @@ export default {
 或者 插件模式
 
 import Vue from 'vue';
-import DialogPlugin from 'ct-adc-dialog';
+import {DialogPlugin} from 'ct-adc-dialog';
 
 Vue.use(DialogPlugin);
 

@@ -1,4 +1,4 @@
-import dialogComponent from './main';
+import DialogComponent from './main';
 
 const mergeOptions = function(vm, options) {
     const defaults = {};
@@ -15,9 +15,9 @@ const mergeOptions = function(vm, options) {
     }
 };
 
-const plugin = {
+const DialogPlugin = {
     install(vue){
-        const DialogConstructor = vue.extend(dialogComponent);
+        const DialogConstructor = vue.extend(DialogComponent);
         const $vm = new DialogConstructor({
             el: document.createElement('div')
         });
@@ -42,7 +42,7 @@ const plugin = {
                         this.watcher && this.watcher();
                     }
                 });
-                
+
                 $vm.isShow = true;
             },
             hide(){
@@ -56,4 +56,6 @@ const plugin = {
     }
 };
 
-export default plugin;
+export default DialogComponent;
+export {DialogPlugin};
+

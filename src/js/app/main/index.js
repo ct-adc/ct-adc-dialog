@@ -1,8 +1,7 @@
 import Vue from 'vue';
-import dg from '../../../component/main';
-import plugin from '../../../component/index';
+import dg, {DialogPlugin} from '../../../component/index';
 
-Vue.use(plugin);
+Vue.use(DialogPlugin);
 
 new Vue({
     el: '#app',
