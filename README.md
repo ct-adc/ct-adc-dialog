@@ -80,6 +80,6 @@ on-hide | - | 隐藏事件
 
 ## 更新日志
 
-[更新日志]({CHANGELOG.md的线上地址})
+[更新日志](https://github.com/ct-adc/ct-adc-dialog/blob/dev/CHANGELOG.md)
 
 
