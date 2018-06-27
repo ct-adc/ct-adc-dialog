@@ -14,32 +14,6 @@
 </head>
 <body>
 <div id="app">
-  <div style="margin:100px;">
-    <button class="btn btn-primary" @click="isShow=true">组件模式调用dialog</button>
-    <button class="btn btn-primary" @click="showDialog">插件形式调用dialog</button>
-  </div>
-  <dg v-model="isShow" content="这是一个dialog" title="标题" width="50%">
-    <div slot="body">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>姓名</th>
-            <th>成绩</th>
-            <th>班级</th>
-            <th>名次</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="item in 10">
-            <th>小马</th>
-            <th>100</th>
-            <th>316</th>
-            <th>1</th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </dg>
 </div>
 <script src="//static.tcy365.com/cdn/jquery/2.1.0/jquery.js"></script>
 <script src="//static.tcy365.com/cdn/bootstrap/3.3.7/custom/1.0.4/js/bootstrap.min.js"></script>

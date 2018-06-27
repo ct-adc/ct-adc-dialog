@@ -1,23 +1,10 @@
 import Vue from 'vue';
-import dg, {DialogPlugin} from '../../../component/index';
 
-Vue.use(DialogPlugin);
-
+import app from './app';
 new Vue({
     el: '#app',
-    data: {
-        isShow: false
-    },
-    components: {
-        dg
-    },
-    methods: {
-        showDialog(){
-            this.$dialog.show({
-                title: '插件形式',
-                content: '可以了吗？'
-            });
-        }
+    render(h){
+        return h(app);
     }
 })
 ;

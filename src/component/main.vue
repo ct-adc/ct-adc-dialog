@@ -10,12 +10,11 @@
                 </div>
                 <div class="ct-dialog-body">
                     <slot name="body">
-                        {{content}}
                     </slot>
                 </div>
                 <div class="ct-dialog-foot">
                     <slot name="foot">
-                        <button class="btn btn-primary" @click="hide">确定</button>
+                        
                     </slot>
                     <!-- <button class="btn btn-default" @click="hide">取消</button> -->
                 </div>
@@ -39,11 +38,7 @@ export default {
         value: Boolean,
         title: {
             type: String,
-            default: '标题'
-        },
-        content: {
-            type: String,
-            default: '内容'
+            default: ''
         }
     },
     watch: {
@@ -65,10 +60,6 @@ export default {
     methods: {
         hide(){
             this.isShow = false;
-        },
-        yes(){
-            this.$emit('input', false);
-            this.$emit('yes');
         },
         showMask(){
             const mask = document.createElement('div');
