@@ -74,7 +74,7 @@ export default {
             if (mask){
                 mask.classList.add('unactive');
                 setTimeout(() => {
-                    mask.remove();
+                    mask.parentNode.removeChild(mask);
                 }, 300);
             }
         }
