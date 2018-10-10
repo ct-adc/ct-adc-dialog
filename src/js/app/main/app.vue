@@ -15,7 +15,7 @@ import dialogs from '@/component/main';
 export default {
     data() {
         return {
-            show: false      
+            show: true      
         };
     },
     methods: {

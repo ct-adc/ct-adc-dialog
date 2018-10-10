@@ -1,6 +1,6 @@
 {
   "name": "ct-adc-dialog",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "a dialog component for vue",
   "author": "clovemx@gmail.com",
   "private": false,

@@ -45,8 +45,10 @@ export default {
         value(val){
             this.isShow = val;
         },
-        isShow(val){
-            this.$emit('input', val);
+        isShow(val, old){
+            if (val !== old){
+                this.$emit('input', val);
+            }
             if (val){
                 this.$emit('on-show');
                 this.showMask();
@@ -56,6 +58,9 @@ export default {
             this.$emit('on-hide');
             this.removeMask();
         }
+    },
+    created(){
+        this.isShow = this.value;
     },
     methods: {
         hide(){
@@ -145,7 +150,8 @@ export default {
 }
 .ct-dialog-container{
     position: fixed;
-    top: 200px;
+    top: 30%;
+    transform: translateY(-30%);
     right: 0;
     left: 0;
     background-color: #fff;
